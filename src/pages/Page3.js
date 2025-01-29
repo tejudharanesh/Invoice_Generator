@@ -4,8 +4,6 @@ import { Page, Text, View, StyleSheet } from "@react-pdf/renderer";
 const styles = StyleSheet.create({
   page: {
     padding: 40,
-    backgroundColor: "#ffffff",
-    color: "#fff",
   },
   header: {
     fontSize: 24,
@@ -21,19 +19,20 @@ const styles = StyleSheet.create({
   },
   card: {
     width: "30%",
-    backgroundColor: "#1a1a1a",
-    paddingHorizontal: 10,
+    backgroundColor: "#7c7c7c",
+    padding: 15,
     marginBottom: 15,
-    minHeight: 100,
+    minHeight: 150,
     justifyContent: "space-between",
   },
   cardLast: {
-    width: "60%",
-    backgroundColor: "#1a1a1a",
+    width: "65%",
+    backgroundColor: "#7c7c7c",
     padding: 15,
-    minHeight: 120,
+    minHeight: 150,
     alignItems: "center",
     textAlign: "center",
+    marginBottom: 15,
   },
   title: {
     fontSize: 14,
@@ -46,12 +45,12 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 16,
-    textAlign: "right",
+    textAlign: "center",
   },
   totalCost: {
     fontSize: 18,
     fontWeight: "bold",
-    textAlign: "right",
+    textAlign: "center",
     marginTop: 20,
   },
   note: {
