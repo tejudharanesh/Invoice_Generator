@@ -1,7 +1,5 @@
 import React from "react";
-import { CgFileDocument } from "react-icons/cg";
 import { HiOutlineDownload, HiOutlinePrinter } from "react-icons/hi";
-import { FiShare2 } from "react-icons/fi";
 import { BlobProvider, PDFDownloadLink } from "@react-pdf/renderer";
 import Invoice from "./Invoice";
 import { saveAs } from "file-saver";
