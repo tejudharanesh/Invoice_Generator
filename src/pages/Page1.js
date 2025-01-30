@@ -170,7 +170,7 @@ const Page1 = () => (
         <Text style={styles.subHeader}>Estimated Cost</Text>
         <Text style={[styles.text, { fontSize: 22 }]}>
           <Image src={rupee} style={{ width: 15, height: 15 }} />
-          26,83,800
+          {(2683800).toLocaleString("en-IN")}
         </Text>
       </View>
       <View

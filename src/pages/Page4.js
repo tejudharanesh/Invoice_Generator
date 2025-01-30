@@ -279,8 +279,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>Essentials</Text>
           <Text style={{ flex: 1 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            1000000
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
       </View>
 
@@ -294,8 +294,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>SUBTOTAL</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            1000000
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
         <View style={[styles.row]}>
           <Text style={{ flex: 2 }}></Text>
@@ -303,8 +303,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>ROUND OFF</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            1000000
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
         <View style={[styles.row]}>
           <Text style={{ flex: 2 }}></Text>
@@ -312,7 +312,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>IGST(18%)</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            00
+            {(2683800).toLocaleString("en-IN")}
+
           </Text>
         </View>
         <View style={[styles.row]}>
@@ -321,8 +322,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>CGST(9%)</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            00
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
         <View style={[styles.row]}>
           <Text style={{ flex: 2 }}></Text>
@@ -330,8 +331,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>SGST(9%)</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            00
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
         <View
           style={[styles.row, { borderBottomWidth: 1, borderColor: "#ddd" }]}
@@ -341,8 +342,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>Total Tax:</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            00
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
 
         <View
@@ -353,8 +354,8 @@ const Page4 = () => (
           <Text style={{ flex: 1 }}>NET TOTAL:</Text>
           <Text style={{ flex: 1, textAlign: "right", paddingRight: 40 }}>
             <Image src={rupee} style={{ width: 8, height: 8 }} />
-            00
-          </Text>
+            {(2683800).toLocaleString("en-IN")}
+            </Text>
         </View>
       </View>
 

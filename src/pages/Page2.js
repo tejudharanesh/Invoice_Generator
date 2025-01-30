@@ -349,7 +349,7 @@ const Page2 = () => (
                 src={rupee}
                 style={{ width: 14, height: 14, paddingTop: 2 }}
               />
-              61,81,000
+              {(2683800).toLocaleString("en-IN")}
             </Text>
           </View>
         </View>
