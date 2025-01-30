@@ -1,6 +1,11 @@
 import React from "react";
 import { Page, Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import logo from "../Logo1.png"; // Ensure you have the logo image in your project
+import rupee from "../rupee.png";
+import plot from "../plot.png";
+import water from "../Water.png";
+import home from "../home.png";
+import arrow from "../downarrow.png";
 
 // Define styles
 const styles = StyleSheet.create({
@@ -30,7 +35,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   text: {
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 5,
   },
 
@@ -50,9 +55,10 @@ const Page1 = () => (
           { width: "65%" },
           { paddingBottom: 15, paddingLeft: 15 },
           {
-            borderLeft: "1px dashed #000000",
-            borderBottom: "1px solid #000000",
-            borderRight: "1px dashed #000000",
+            borderLeft: "1.5px dashed #c0c0c0",
+            borderBottom: "1.5px solid #c0c0c0",
+            borderRight: "1.5px dashed #c0c0c0",
+            borderDashArray: "10,10",
           },
         ]}
       >
@@ -62,7 +68,7 @@ const Page1 = () => (
         style={[
           { width: "35%" },
           {
-            borderBottom: "1px dashed #000000",
+            borderBottom: "1.5px dashed #c0c0c0",
           },
         ]}
       >
@@ -74,11 +80,11 @@ const Page1 = () => (
       <View
         style={[
           { width: "65%" },
-          { paddingBottom: 15, paddingLeft: 15, paddingTop: 15 },
+          { paddingBottom: 25, paddingLeft: 15, paddingTop: 25 },
           {
-            borderLeft: "1px solid #000000",
-            borderBottom: "1px solid #000000",
-            borderRight: "1px dashed #000000",
+            borderLeft: "1.5px solid #c0c0c0",
+            borderBottom: "1.5px solid #c0c0c0",
+            borderRight: "1.5px dashed #c0c0c0",
           },
         ]}
       >
@@ -94,7 +100,7 @@ const Page1 = () => (
         style={[
           { width: "35%" },
           {
-            borderBottom: "1px dashed #000000",
+            borderBottom: "1.5px dashed #c0c0c0",
           },
         ]}
       ></View>
@@ -104,23 +110,46 @@ const Page1 = () => (
       <View
         style={[
           { width: "65%" },
-          { paddingBottom: 15, paddingLeft: 15, paddingTop: 15 },
+          { paddingBottom: 25, paddingLeft: 15, paddingTop: 25 },
           {
-            borderLeft: "1px dashed #000000",
-            borderBottom: "1px solid #000000",
-            borderRight: "1px solid #000000",
+            borderLeft: "1.5px dashed #c0c0c0",
+            borderBottom: "1.5px solid #c0c0c0",
+            borderRight: "1.5px solid #c0c0c0",
           },
         ]}
       >
-        <Text style={styles.text}>Site area - 1200 sq ft</Text>
-        <Text style={styles.text}>Built-up area - 1080 sq ft</Text>
-        <Text style={styles.text}>Sump capacity - 5000 liters</Text>
+        {[
+          { src: plot, text: "Site area - 1200 sq ft" },
+          { src: home, text: "Built-up area - 1080 sq ft" },
+          { src: water, text: "Sump capacity - 5000 liters" },
+        ].map((item, index) => (
+          <View
+            key={index}
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 5,
+            }}
+          >
+            <Image
+              src={item.src}
+              style={{
+                width: 15,
+                height: 15,
+                marginRight: 8,
+                paddingBottom: 4,
+              }}
+            />
+            <Text style={styles.text}>{item.text}</Text>
+          </View>
+        ))}
       </View>
+
       <View
         style={[
           { width: "35%" },
           {
-            borderBottom: "1px dashed #000000",
+            borderBottom: "1.5px dashed #c0c0c0",
           },
         ]}
       ></View>
@@ -130,22 +159,25 @@ const Page1 = () => (
       <View
         style={[
           { width: "65%" },
-          { paddingBottom: 15, paddingLeft: 15, paddingTop: 15 },
+          { paddingBottom: 25, paddingLeft: 15, paddingTop: 25 },
           {
-            borderLeft: "1px solid #000000",
-            borderBottom: "1px solid #000000",
-            borderRight: "1px dashed #000000",
+            borderLeft: "1.5px solid #c0c0c0",
+            borderBottom: "1.5px solid #c0c0c0",
+            borderRight: "1.5px dashed #c0c0c0",
           },
         ]}
       >
         <Text style={styles.subHeader}>Estimated Cost</Text>
-        <Text style={styles.text}>26,83,800</Text>
+        <Text style={[styles.text, { fontSize: 22 }]}>
+          <Image src={rupee} style={{ width: 15, height: 15 }} />
+          26,83,800
+        </Text>
       </View>
       <View
         style={[
           { width: "35%" },
           {
-            borderBottom: "1px dashed #000000",
+            borderBottom: "1.5px dashed #c0c0c0",
           },
         ]}
       ></View>
@@ -157,18 +189,31 @@ const Page1 = () => (
           { width: "65%" },
           { paddingBottom: 15, paddingLeft: 15, paddingTop: 15 },
           {
-            borderLeft: "1px dashed #000000",
-            borderRight: "1px dashed #000000",
+            borderLeft: "1.5px dashed #c0c0c0",
+            borderRight: "1.5px dashed #c0c0c0",
           },
         ]}
       >
         <Text>Call us</Text>
         <Text>9606210818</Text>
       </View>
-      <View>
-        <Text style={{ paddingTop: 10, fontSize: 10, paddingTop: 50 }}>
-          NEXT PAGE
-        </Text>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          marginTop: 40,
+        }}
+      >
+        <Text style={styles.text}>NEXT PAGE</Text>
+        <Image
+          src={arrow}
+          style={{
+            width: 20,
+            height: 20,
+            marginRight: 8,
+            paddingBottom: 4,
+          }}
+        />
       </View>
     </View>
   </Page>
