@@ -82,7 +82,7 @@ const totalEstimatedCost = 100000;
 const Page3 = () => {
   const scheduleData = [
     {
-      title: "Design & Development",
+      title: "Design and Development",
       percentage: 1,
       price: 0.01 * totalEstimatedCost,
     },
@@ -112,7 +112,7 @@ const Page3 = () => {
       price: 0.1 * totalEstimatedCost,
     },
     { title: "Handover", percentage: 4, price: 0.04 * totalEstimatedCost },
-    { title: "Total", price: totalEstimatedCost },
+    { title: "Total*", price: totalEstimatedCost },
   ];
 
   return (
